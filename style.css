@@ -32,54 +32,35 @@ body {
     color: #f3f3f3;
 }
 
-.container {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.flex-column {
+display: flex;
+flex-direction: column;
 }
 
 .storylinks {
     color: black;
     list-style-type: none;
-    margin: 20px;
 }
 
-.row{
+.dataBox{
     list-style-type: none;
     text-align: center;
     background-color: #ddd;
-    width: 500px;
-    margin: 20px;
-    padding: 30px;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
     justify-content: space-around;
-    display: flex;
-    flex-direction: row;
+    align-items: center; 
 }
-
-.row2{
-    list-style-type: none;
-    text-align: center;
-    background-color: #ddd;
-    width: 500px;
-    margin: 20px;
-    padding: 50px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
+.buttonDisplay {
+    display: inline-block;
 }
-
-
-
-.row3{
-    list-style-type: none;
-    text-align: center;
-    background-color: #ddd;
-    width: 500px;
-    margin: 20px;
-    padding: 50px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-}
-
 .btn1, .btn2 {
     height: 35px;
     width: 100px;
@@ -104,13 +85,17 @@ body {
     margin: 20px;
 }
 
-#livescore {
+.livescore {
     text-align: center;
     background-color: #ddd;
-    padding: 100px;
-    width: 100%;
-    margin: 50px;
+    width: 90%;
     list-style-type: none;
+    margin: 10px 25px 0px 10px;
 }
 
+.scoreFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
