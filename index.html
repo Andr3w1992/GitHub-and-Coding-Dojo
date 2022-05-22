@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSNN</title>
+    <link rel="preconnect" href="https://fonts/googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+            <h1>DSNN</h1>
+            <ul class="navlinks">
+                <li>Football</li>
+                <li>Baseball</li>
+                <li>Basketball</li>
+                <li>Soccer</li>
+                <li>More...</li>
+                <img src="search-light.png">
+                <img src="hamburger-light.png">
+                <img src="user-circle-light.png">
+            </ul>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="row">
+                <h2>Top Stories</h2>
+                <ul class="storylinks">
+                    <li>Ninjas up big in the fifth</li>
+                    <li>Best sports cities</li>
+                    <li>Choi joins Hall of Fame</li>
+                    <li>Tournament Underway</li>
+                    <li>Samurai at Wizards</li>
+                </ul>
+        </div>       
+        <div class="row2">
+            <h2>Customize Your DSNN</h2>  
+            <li><button class= "btn1">Sign In</button></li>
+            <li><button class= "btn2">Sign Out</button></li>
+        </div>
+        <div class="row3">
+            <h2>Never Miss a Play</h2>  
+            <li><button class="btn3">SUBSCRIBE</button></li>
+        </div>
+        <div id="livescore">
+            <div class="column1">
+            <h1>Live! Ninjas Leading Pirates</h1>
+            <img src="sjc-ninjas.png" alt="ninjas" class="icon-ninja"> 
+            San Jose Ninjas</p>
+            <p> (10W-3L)</p>
+            <button class="score" onclick="increase()"><span id="score1">319</span></button>
+            <p> VS </p>
+            </div>
+
+            <div class="column2">
+            <img src="ns-pirates.png" alt="pirates" class="icon-pirate"> 
+            Nova Scotia Pirates</p>
+            <p> (12W-2L)</p>
+            <button class="score" onclick ="increase2()"><span id="score2">162</span></button>
+            <p> A conservative match between the two top performing sides in the Central League Division with a number 1 seed at stake... get live updates</p>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>       
+</body>
+</html>
