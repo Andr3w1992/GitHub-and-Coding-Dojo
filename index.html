@@ -27,44 +27,49 @@
         </div> 
     </div>
     <div class="container">
-        <div class="row">
-                <h2>Top Stories</h2>
-                <ul class="storylinks">
-                    <li>Ninjas up big in the fifth</li>
-                    <li>Best sports cities</li>
-                    <li>Choi joins Hall of Fame</li>
-                    <li>Tournament Underway</li>
-                    <li>Samurai at Wizards</li>
-                </ul>
-        </div>       
-        <div class="row2">
-            <h2>Customize Your DSNN</h2>  
-            <li><button class= "btn1">Sign In</button></li>
-            <li><button class= "btn2">Sign Out</button></li>
-        </div>
-        <div class="row3">
-            <h2>Never Miss a Play</h2>  
-            <li><button class="btn3">SUBSCRIBE</button></li>
-        </div>
-        <div id="livescore">
-            <div class="column1">
-            <h1>Live! Ninjas Leading Pirates</h1>
-            <img src="sjc-ninjas.png" alt="ninjas" class="icon-ninja"> 
-            San Jose Ninjas</p>
-            <p> (10W-3L)</p>
-            <button class="score" onclick="increase()"><span id="score1">319</span></button>
-            <p> VS </p>
+        <div class="flex-container">
+            <div class="flex-column" style="flex-basis: 33%";>
+                <div class="dataBox">
+                    <h2 class="title">Top Stories</h2>
+                    
+                </div>       
+                <div class="dataBox">
+                    <h2>Customize Your DSNN</h2> 
+                    <div class="buttonDisplay">
+                        <button class= "btn1">Sign In</button>
+                        <button class= "btn2">Sign Out</button>
+                    </div>
+                </div>
+                <div class="dataBox">
+                    <h2>Never Miss a Play</h2>  
+                    <button class="btn3">SUBSCRIBE</button>
+                </div>
             </div>
-
-            <div class="column2">
-            <img src="ns-pirates.png" alt="pirates" class="icon-pirate"> 
-            Nova Scotia Pirates</p>
-            <p> (12W-2L)</p>
-            <button class="score" onclick ="increase2()"><span id="score2">162</span></button>
-            <p> A conservative match between the two top performing sides in the Central League Division with a number 1 seed at stake... get live updates</p>
+            <div class="livescore" id="livescores">
+                <h1>Live! Ninjas Leading Pirates</h1>
+                <div class="scoreFlex">
+                    <div>
+                        <img src="sjc-ninjas.png" alt="ninjas" class="icon-ninja"> 
+                        <h5>San Jose Ninjas</h5>
+                        <p> (10W-3L)</p>
+                        <button class="score" onclick="increase()"><span id="score1">319</span></button>
+                    </div>
+                    <div>
+                        <p> VS </p>
+                        <h5>(</h5><span id="timer"></span><h5>) time remains!</h5>
+                    </div>
+                    <div>
+                        <img src="ns-pirates.png" alt="pirates" class="icon-pirate"> 
+                        <h5>Nova Scotia Pirates</h5>
+                        <p>(12W-2L)</p>
+                        <button class="score" onclick ="increase2()"><span id="score2">162</span></button>
+                    </div>
+                </div>
+                <div>
+                    <p> A conservative match between the two top performing sides in the Central League Division with a number 1 seed at stake... get live updates</p>
+                </div>                
             </div>
-        </div>    
-    </div>
+        </div>      
     <script src="script.js"></script>       
 </body>
 </html>
